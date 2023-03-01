@@ -5,8 +5,7 @@ import pickle
 import numpy as np
 
 ## loading the ann model
-with open(r'heart_model.pkl', 'rb') as file:
-    model = pickle.load(file)
+model = model.load("saved_model.pb")
 
 ## creat a function of prediction
 def heart_prediciton(input):
