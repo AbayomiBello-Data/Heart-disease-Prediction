@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 
 ## loading the ann model
-model = keras.models.load_model("saved_model.pb")
+model = keras.models.load_model("heart_disease.h5")
 
 ## creat a function of prediction
 def heart_prediciton(input):
