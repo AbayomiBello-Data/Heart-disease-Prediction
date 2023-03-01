@@ -1,11 +1,12 @@
 ## import the libraries
 import streamlit as st
+import keras
 from PIL import Image
 import pickle
 import numpy as np
 
 ## loading the ann model
-model = model.load("saved_model.pb")
+model = keras.models.load_model("saved_model.pb")
 
 ## creat a function of prediction
 def heart_prediciton(input):
